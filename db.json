@@ -1,0 +1,148 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Güneş Gözlüğü",
+      "description": "Güneşin zararlı ışınlarından korunmak için ideal bir seçim.",
+      "isFeatured": "true",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 2,
+      "title": "Spor Gözlüğü",
+      "description": "Aktif yaşam tarzınıza uygun, dayanıklı ve rahat bir seçenek.",
+      "isFeatured": "true",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png"
+    },
+    {
+      "id": 3,
+      "title": "Moda Gözlüğü",
+      "description": "Tarzınızı tamamlayacak şık ve trend bir gözlük.",
+      "isFeatured": "true",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 4,
+      "title": "Okuma Gözlüğü",
+      "description": "Kitap okurken gözlerinizi yormadan keyifli bir okuma deneyimi sunar.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 5,
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 6,
+      "title": "Güvenlik Gözlüğü",
+      "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 7,
+      "title": "Göz Bandı",
+      "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 8,
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 9,
+      "title": "Gözlük Kutusu",
+      "description": "Gözlüklerinizi saklamak ve taşımak için kullanışlı bir kutu.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 10,
+      "title": "Yazılım Gözlüğü",
+      "description": "Yazılım geliştirirken göz sağlığınızı koruyan özel bir gözlük.",
+      "isFeatured": "true",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 11,
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 12,
+      "title": "Güvenlik Gözlüğü",
+      "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 13,
+      "title": "Göz Bandı",
+      "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 14,
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 15,
+      "title": "Gözlük Kutusu",
+      "description": "Gözlüklerinizi saklamak ve taşımak için kullanışlı bir kutu.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 16,
+      "title": "Göz Bandı",
+      "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
+      "isFeatured": "false",
+      "isRecommended": "false",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 17,
+      "title": "Güvenlik Gözlüğü",
+      "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    },
+    {
+      "id": 18,
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "isFeatured": "false",
+      "isRecommended": "true",
+      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+    }
+  ]
+}
