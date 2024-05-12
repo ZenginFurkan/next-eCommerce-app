@@ -36,29 +36,25 @@ export default async function HomeContent() {
     return <Loading />;
   }
 
-  return (
-    <>
-      <div className='bg-gray-100  flex items-center ml-20 mr-20 mt-6'>
-        <div className='mr-8  pl-8'>
-          <h1 className='text-2xl font-bold mb-4'>Yunus</h1>
-          <p className='text-gray-700'>
-            Buying eyewear should leave you happy and good-looking, with money
-            in your pocket. Glasses, sunglasses, and contacts—we’ve got your
-            eyes covered.
-          </p>
-          <button className='mt-12 ml-5 bg-black hover:bg-black-600 text-white px-4 py-2 flex items-center space-x-2'>
-            <span>Shop Now</span>
-            <TiArrowRightOutline />
-          </button>
-        </div>
-        <div>
-          <img
-            className='object-cover w-full h-full'
-            src='/images/banner-girl.png'
-            alt=''
-          />
-        </div>
-      </div>
+    return (
+        <>
+            <div className="bg-gray-100  flex items-center ml-20 mr-20 mt-6">
+                <div className="mr-8  pl-8">
+                    <h1 className="text-2xl font-bold mb-4">Furkan Zengin</h1>
+                    <p className="text-gray-700">
+                        Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+                    </p>
+                    <button className="mt-12 ml-5 bg-black hover:bg-black-600 text-white px-4 py-2 flex items-center space-x-2">
+                        <span>
+                            Shop Now
+                        </span>
+                        <TiArrowRightOutline />
+                    </button>
+                </div>
+                <div >
+                    <img className="object-cover w-full h-full" src="/images/banner-girl.png" alt="" />
+                </div>
+            </div>
 
       <div className='flex justify-between ml-20 mt-20 font-bold'>
         Featured Products
