@@ -1,18 +1,19 @@
 import React from "react";
 import Navibar from "../../components/navibar/Navibar";
 import "../../app/globals.css";
-import FeaturedContent from "../../components/featuredcontent/FeaturedContent";
-import { store } from "@/stores/store";
 import BottomBar from "@/components/bottombar/BottomBar";
 import { Provider } from "react-redux";
+import SignupForm from "../../components/signupform/SignupForm"
+import { store } from "@/stores/store";
 export default function index() {
   return (
     <div>
-      <Provider store={store} > 
+      <Provider store={store}>
         <Navibar />
-        <FeaturedContent />
+        <SignupForm />
         <BottomBar />
       </Provider>
     </div>
-  );
+      
+  )
 }

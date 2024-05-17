@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function RecommendedCard({firstSixTodos}) {
   return (
+    
     <div className="ml-20 mr-20">
                 <div className="grid grid-cols-5 gap-6">
                     {firstSixTodos?.map((todo, index) => (
@@ -13,9 +14,9 @@ export default function RecommendedCard({firstSixTodos}) {
                                     alt=""
                                 />
                             </a>
-                            <div className="p-4 text-surface dark:text-white">
+                            <div className="p-4 text-surface dark:text-dark">
                                 <h5 className="mb-2 text-lg font-medium leading-tight">{todo?.title}</h5>
-                                <p className="mb-4 font-Caveat text-base">
+                                <p className="mb-4 font-Caveat text-base text-gray-500">
                                     {todo?.description}
                                 </p>
                             </div>

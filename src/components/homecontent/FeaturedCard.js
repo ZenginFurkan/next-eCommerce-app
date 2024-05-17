@@ -13,9 +13,9 @@ export default function FeaturedCard({firstSixTodos}) {
                                 alt=""
                             />
                         </a>
-                        <div className="p-4 text-surface dark:text-white">
+                        <div className="p-4 text-surface dark:text-dark">
                             <h5 className="mb-2 text-lg font-medium leading-tight">{todo?.title}</h5>
-                            <p className="mb-4 font-Caveat text-base">
+                            <p className="mb-4 font-Caveat text-base text-gray-500 ">
                                 {todo?.description}
                             </p>
                         </div>

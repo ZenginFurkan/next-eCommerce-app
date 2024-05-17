@@ -6,7 +6,8 @@
       "description": "Güneşin zararlı ışınlarından korunmak için ideal bir seçim.",
       "isFeatured": "true",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$34"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "description": "Aktif yaşam tarzınıza uygun, dayanıklı ve rahat bir seçenek.",
       "isFeatured": "true",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png"
+      "image": "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png",
+      "price": "$45"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "description": "Tarzınızı tamamlayacak şık ve trend bir gözlük.",
       "isFeatured": "true",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
+      "price": "$29"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "description": "Kitap okurken gözlerinizi yormadan keyifli bir okuma deneyimi sunar.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/YVPdTsyxJybMCsdKpXhq.png",
+      "price": "$25"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": "$40"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/bS1hHdO7NvbR1yN5ZPlR.png",
+      "price": "$22"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$18"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$35"
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "description": "Gözlüklerinizi saklamak ve taşımak için kullanışlı bir kutu.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$27"
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "description": "Yazılım geliştirirken göz sağlığınızı koruyan özel bir gözlük.",
       "isFeatured": "true",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png",
+      "price": "$50"
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$36"
     },
     {
       "id": 12,
@@ -94,7 +105,8 @@
       "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
+      "price": "$23"
     },
     {
       "id": 13,
@@ -102,7 +114,8 @@
       "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$17"
     },
     {
       "id": 14,
@@ -110,7 +123,8 @@
       "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$37"
     },
     {
       "id": 15,
@@ -118,7 +132,8 @@
       "description": "Gözlüklerinizi saklamak ve taşımak için kullanışlı bir kutu.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$28"
     },
     {
       "id": 16,
@@ -126,7 +141,8 @@
       "description": "Gözlerinizi korumak için kullanılan bir bandaj.",
       "isFeatured": "false",
       "isRecommended": "false",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": "$19"
     },
     {
       "id": 17,
@@ -134,7 +150,8 @@
       "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/YVPdTsyxJybMCsdKpXhq.png",
+      "price": "$24"
     },
     {
       "id": 18,
@@ -142,7 +159,8 @@
       "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
       "isFeatured": "false",
       "isRecommended": "true",
-      "image" : "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png"
+      "image": "/images/featuredImages/bS1hHdO7NvbR1yN5ZPlR.png",
+      "price": "$38"
     }
   ]
 }
