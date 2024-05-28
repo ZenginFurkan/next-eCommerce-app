@@ -23,6 +23,11 @@ export default function HomeContent() {
     return <Loading />;
   }
 
+  if (!Array.isArray(firstSixTodos)) {
+    // Veri yüklenene kadar veya hata alana kadar Loading bileşenini göster
+    return <Loading />;
+  }
+
   return (
     <>
       <div className="bg-gray-100 flex items-center ml-20 mr-20 mt-6">
@@ -34,7 +39,7 @@ export default function HomeContent() {
             eyes covered.
           </p>
           <button className="mt-12 ml-5 bg-black hover:bg-black-600 text-white px-4 py-2 flex items-center space-x-2">
-            <span>Shop Now</span>
+            <span onClick={() => router.push("/shop")} >Shop Now</span>
             <TiArrowRightOutline />
           </button>
         </div>

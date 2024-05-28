@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { isRecommended } from "../../stores/glasses-store/todoSlice";
+import Link from "next/link";
+import Loading from "../loading/Loading";
 export default function RecommendedContent() {
   const dispatch = useDispatch();
 
@@ -10,6 +12,11 @@ export default function RecommendedContent() {
 
   const { todos } = useSelector((state) => state.todos);
   console.log(todos);
+  if (!Array.isArray(todos)) {
+    // Veri yüklenene kadar veya hata alana kadar Loading bileşenini göster
+    return <Loading />;
+  }
+  
   return (
     <>
       <div className="bg-gray-100  flex items-center ml-20 mr-20 mt-6 overflow-hidden justify-end">
@@ -29,13 +36,13 @@ export default function RecommendedContent() {
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-md relative"
             >
-              <a href="#!">
+              <Link href={`/product/${todo?.id}`}>
                 <img
                   className="bg-gray-100 w-full h-auto rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
                   src={todo?.image}
                   alt=""
                 />
-              </a>
+              </Link>
               <div className="p-4 text-surface dark:text-dark">
                 <h5 className="mb-2 text-lg font-medium leading-tight">
                   {todo?.title}

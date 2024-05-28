@@ -25,13 +25,30 @@ export const isRecommended = createAsyncThunk(
   }
 );
 
+export const fetchTodosById = createAsyncThunk("todos/fetchTodosById", async (id) => {
+  const response = await axiosInstance.get(`/todos/${id}`);
+  return response.data
+}
+)
+
+
 const todoSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-
+      .addCase(fetchTodosById.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchTodosById.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.todos = action.payload;
+      })
+      .addCase(fetchTodosById.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message;
+      })
       .addCase(fetchTodos.pending, (state) => {
         state.status = "loading";
       })
