@@ -7,7 +7,9 @@
       "isFeatured": "true",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$34"
+      "price": 34,
+      "size": "20mm",
+      "color": "red"
     },
     {
       "id": "2",
@@ -16,7 +18,9 @@
       "isFeatured": "true",
       "isRecommended": "true",
       "image": "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png",
-      "price": "$45"
+      "price": 45,
+      "size": "20mm",
+      "color": "red"
     },
     {
       "id": "3",
@@ -25,7 +29,9 @@
       "isFeatured": "true",
       "isRecommended": "false",
       "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
-      "price": "$29"
+      "price": 29,
+      "size": "20mm",
+      "color": "blue"
     },
     {
       "id": "4",
@@ -34,7 +40,9 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/YVPdTsyxJybMCsdKpXhq.png",
-      "price": "$25"
+      "price": 25,
+      "size": "20mm",
+      "color": "green"
     },
     {
       "id": "5",
@@ -43,7 +51,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
-      "price": "$40"
+      "price": 40,
+      "size": "28mm",
+      "color": "orange"
     },
     {
       "id": "6",
@@ -52,7 +62,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/bS1hHdO7NvbR1yN5ZPlR.png",
-      "price": "$22"
+      "price": 22,
+      "size": "36mm",
+      "color": "purple"
     },
     {
       "id": "7",
@@ -61,7 +73,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$18"
+      "price": 18,
+      "size": "20mm",
+      "color": "black"
     },
     {
       "id": "8",
@@ -70,7 +84,9 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$35"
+      "price": 35,
+      "size": "28mm",
+      "color": "red"
     },
     {
       "id": "9",
@@ -79,7 +95,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$27"
+      "price": 27,
+      "size": "36mm",
+      "color": "blue"
     },
     {
       "id": "10",
@@ -88,7 +106,9 @@
       "isFeatured": "true",
       "isRecommended": "true",
       "image": "/images/featuredImages/ALz5M4DI7MF7CdZrq3gS.png",
-      "price": "$50"
+      "price": 50,
+      "size": "20mm",
+      "color": "green"
     },
     {
       "id": "11",
@@ -97,7 +117,9 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$36"
+      "price": 36,
+      "size": "28mm",
+      "color": "orange"
     },
     {
       "id": "12",
@@ -106,7 +128,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
-      "price": "$23"
+      "price": 23,
+      "size": "36mm",
+      "color": "purple"
     },
     {
       "id": "13",
@@ -115,7 +139,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$17"
+      "price": 17,
+      "size": "20mm",
+      "color": "black"
     },
     {
       "id": "14",
@@ -124,7 +150,9 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$37"
+      "price": 37,
+      "size": "28mm",
+      "color": "red"
     },
     {
       "id": "15",
@@ -133,7 +161,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$28"
+      "price": 28,
+      "size": "36mm",
+      "color": "blue"
     },
     {
       "id": "16",
@@ -142,7 +172,9 @@
       "isFeatured": "false",
       "isRecommended": "false",
       "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": "$19"
+      "price": 19,
+      "size": "20mm",
+      "color": "green"
     },
     {
       "id": "17",
@@ -151,7 +183,9 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/YVPdTsyxJybMCsdKpXhq.png",
-      "price": "$24"
+      "price": 24,
+      "size": "28mm",
+      "color": "orange"
     },
     {
       "id": "18",
@@ -160,7 +194,110 @@
       "isFeatured": "false",
       "isRecommended": "true",
       "image": "/images/featuredImages/bS1hHdO7NvbR1yN5ZPlR.png",
-      "price": "$38"
+      "price": 38,
+      "size": "36mm",
+      "color": "purple"
+    }
+  ],
+  "basket": [
+    {
+      "id": "3",
+      "title": "Moda Gözlüğü",
+      "description": "Tarzınızı tamamlayacak şık ve trend bir gözlük.",
+      "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
+      "price": 29,
+      "size": "20mm",
+      "color": "blue",
+      "isFeautered": "true",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "14",
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": 37,
+      "size": "28mm",
+      "color": "red",
+      "isFeautered": "false",
+      "isRecommended": "true"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "8",
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": 35,
+      "size": "28mm",
+      "color": "red",
+      "isFeautered": "false",
+      "isRecommended": "true"
     }
   ]
 }

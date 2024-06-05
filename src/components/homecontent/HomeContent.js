@@ -17,7 +17,7 @@ export default function HomeContent() {
   }, [dispatch]);
 
   const { todos } = useSelector((state) => state.todos);
-  const firstSixTodos = todos.slice(0, 6);
+  const firstSixTodos = todos?.slice(0, 6);
 
   if (todos.length === 0) {
     return <Loading />;

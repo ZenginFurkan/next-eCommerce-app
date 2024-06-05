@@ -1,31 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { BiShoppingBag } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 import ShoppingCardForm from "../shoppingcardform/ShoppingCardForm";
-import Modal from "../modal/Modal"; // Modal bileşenini import edin
+import { useSelector } from "react-redux";
 
 export default function Navibar() {
   const router = useRouter();
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const [searchText, setSearchText] = useState("");
-
-  const handleClickBasket = () => {
-    setIsBasketOpen(!isBasketOpen);
-  };
+  const { basketItems } = useSelector((state) => state.basket);
 
   const handleSearchChange = (e) => {
     setSearchText(e.target.value);
   };
 
-  useEffect(() => {
-    if (!searchText) {
-      setIsBasketOpen(false);
-    }
-  }, [searchText]);
-
-  const closeModal = () => {
-    setIsBasketOpen(false);
-  };
+  const basketItemCount = basketItems?.reduce((total, currentItem) => total + currentItem.quantity, 0);
 
   return (
     <div className="py-4">
@@ -60,22 +49,35 @@ export default function Navibar() {
             onChange={handleSearchChange}
             className="rounded-l-lg px-4 py-2 border text-black focus:outline-none"
           />
-          <button className="bg-white hover:bg-gray-200 px-4 py-2">
-            <span className="inline-block" onClick={handleClickBasket}>
-              <BiShoppingBag className="h-8 w-8" />{" "}
-            </span>{" "}
+          <button
+            className="bg-white hover:bg-gray-200 px-4 py-2 relative"
+            onClick={() => setIsBasketOpen(true)}
+          >
+            <span className="inline-block">
+              <BiShoppingBag className="h-8 w-8" />
+            </span>
+            <span className="absolute -top-2 -right-2 bg-red-500 text-black rounded-full w-6 h-6 flex items-center justify-center text-xs">
+              {basketItemCount}
+            </span>
           </button>
-          <button className="bg-black hover:bg-black-500 text-white px-4 py-2" onClick={() => router.push("/signup")}>
+          <button
+            className="bg-black hover:bg-black-500 text-white px-4 py-2"
+            onClick={() => router.push("/signup")}
+          >
             Sign Up
           </button>
-          <button className="bg-gray-200 hover:bg-white-800 text-gray-600 px-4 py-2" onClick={() => router.push("/signin")}>
+          <button
+            className="bg-gray-200 hover:bg-white-800 text-gray-600 px-4 py-2"
+            onClick={() => router.push("/signin")}
+          >
             Sign In
           </button>
         </div>
       </div>
-      <Modal isOpen={isBasketOpen} onClose={closeModal}>
-        <ShoppingCardForm />
-      </Modal>
+
+      {isBasketOpen && (
+        <ShoppingCardForm isOpen={isBasketOpen} setIsOpen={setIsBasketOpen} />
+      )}
     </div>
   );
 }

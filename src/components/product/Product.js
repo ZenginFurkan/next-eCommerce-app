@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-export default function Product() {
+export default function Product({basket =[],setBasket}) {
   
   const router = useRouter();
   const { id } = router.query;
   const dispatch = useDispatch();
+  
 
   useEffect(() => {
     if (id) {
@@ -21,11 +22,17 @@ export default function Product() {
     return <div>Loading...</div>;
   }
 
+  const addToBasket = () => {
+    if (todos) {
+      setBasket([...basket, todos]);
+    }
+  };
+
+
   return (
     <>
       <div className=" flex justify-center items-center mt-20 ">
         <div>
-          {/* Back to Shop butonu */}
           <button
             className="absolute top-4 left-4 ml-96 mt-32 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
             onClick={() => router.push('/shop')}
@@ -66,10 +73,10 @@ export default function Product() {
                 <button className="w-6 h-6 rounded-full bg-green-500"></button>
                 <button className="w-6 h-6 rounded-full bg-yellow-500"></button>
                 <button className="w-6 h-6 rounded-full bg-purple-500"></button>
-                <button className="w-6 h-6 rounded-full bg-gray-500"></button>
+                <button className="w-6 h-6 rounded-full bg-black"></button>
               </div>
-              <p className='text-3xl font-bold pl-2 pb-3' >{todos?.price}</p>
-              <button className='bg-black text-white font-bold py-2 px-4 rounded'>Add to Basket</button>
+              <p className='text-3xl font-bold pl-2 pb-3' >{todos?.price} $</p>
+              <button className='bg-black text-white font-bold py-2 px-4 rounded' onClick={addToBasket} >Add to Basket</button>
             </div>
           </div>
         </div>
