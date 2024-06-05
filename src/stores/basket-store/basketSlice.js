@@ -13,7 +13,7 @@ export const fetchBasket = createAsyncThunk("basket/fetchBasket", async () => {
 });
 
 export const addBasket = createAsyncThunk("basket/addBasket", async (item) => {
-  const response = await axiosInstance.post("/basket",item);
+  const response = await axiosInstance.post("/basket", item);
   return response.data;
 });
 
@@ -24,6 +24,10 @@ export const deleteFromBasket = createAsyncThunk(
     return id;
   }
 );
+export const clearBasketThunk = createAsyncThunk("basket/clearBasketThunk", async () => {
+  await axiosInstance.delete(`/basket/${id}`);
+  return [];
+});
 
 const basketSlice = createSlice({
   name: "basket",
@@ -58,12 +62,25 @@ const basketSlice = createSlice({
       })
       .addCase(deleteFromBasket.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.basket = state.basket.filter((item) => item.id !== action.payload);
+        state.basket = state.basket.filter(
+          (item) => item.id !== action.payload
+        );
       })
       .addCase(deleteFromBasket.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
       })
+      .addCase(clearBasketThunk.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(clearBasketThunk.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.basket = action.payload;
+      })
+      .addCase(clearBasketThunk.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message;
+      });
   },
 });
 

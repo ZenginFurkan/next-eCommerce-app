@@ -1,13 +1,13 @@
-import { fetchTodosById } from '@/stores/glasses-store/todoSlice';
-import { useRouter } from 'next/router';
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-
-export default function Product({basket =[],setBasket}) {
-  
+import { fetchTodosById } from "@/stores/glasses-store/todoSlice";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addBasket } from "@/stores/basket-store/basketSlice";
+export default function Product() {
   const router = useRouter();
   const { id } = router.query;
   const dispatch = useDispatch();
+  const { basket } = useSelector((state) => state.basket);
   
 
   useEffect(() => {
@@ -22,12 +22,22 @@ export default function Product({basket =[],setBasket}) {
     return <div>Loading...</div>;
   }
 
-  const addToBasket = () => {
-    if (todos) {
-      setBasket([...basket, todos]);
-    }
+  const addToBasket = (product) => {
+    const itemToAdd = {
+      id: product.id,
+      title: product.title,
+      description: product.description,
+      image: product.image,
+      price: product.price,
+      size: product.size,
+      color: product.color,
+      isFeautered: product.isFeatured,
+      isRecommended: product.isRecommended,
+    };
+    dispatch(addBasket(itemToAdd));
   };
 
+ 
 
   return (
     <>
@@ -35,7 +45,7 @@ export default function Product({basket =[],setBasket}) {
         <div>
           <button
             className="absolute top-4 left-4 ml-96 mt-32 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-            onClick={() => router.push('/shop')}
+            onClick={() => router.push("/shop")}
           >
             Back to Shop
           </button>
@@ -43,14 +53,27 @@ export default function Product({basket =[],setBasket}) {
         <div className=" border w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg flex">
           {/* Küçük gözlük resimleri */}
           <div className="bg-white-100 flex flex-col items-center space-y-4 w-50 ">
-            <img className="w-32 h-20  border border-gray-300" src={todos?.image} alt="main image thumbnail" />
+            <img
+              className="w-32 h-20  border border-gray-300"
+              src={todos?.image}
+              alt="main image thumbnail"
+            />
             {todos?.relatedImages?.map((img, index) => (
-              <img key={index} className="object-cover border border-gray-300" src={img} alt={`related ${index}`} />
+              <img
+                key={index}
+                className="object-cover border border-gray-300"
+                src={img}
+                alt={`related ${index}`}
+              />
             ))}
           </div>
           {/* Ana gözlük resmi */}
           <div className="flex flex-col  bg-gray-500 items-center mx-4">
-            <img className="w-full max-w-xs" src={todos?.image} alt={todos?.title} />
+            <img
+              className="w-full max-w-xs"
+              src={todos?.image}
+              alt={todos?.title}
+            />
           </div>
 
           {/* Açıklamalar ve seçim öğeleri */}
@@ -75,13 +98,17 @@ export default function Product({basket =[],setBasket}) {
                 <button className="w-6 h-6 rounded-full bg-purple-500"></button>
                 <button className="w-6 h-6 rounded-full bg-black"></button>
               </div>
-              <p className='text-3xl font-bold pl-2 pb-3' >{todos?.price} $</p>
-              <button className='bg-black text-white font-bold py-2 px-4 rounded' onClick={addToBasket} >Add to Basket</button>
+              <p className="text-3xl font-bold pl-2 pb-3">{todos?.price} $</p>
+              <button
+                className="bg-black text-white font-bold py-2 px-4 rounded"
+                onClick={()=>addToBasket(todos)}
+              >
+                Add to Basket
+              </button>
             </div>
           </div>
         </div>
       </div>
     </>
   );
-
 }

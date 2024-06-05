@@ -18,7 +18,7 @@ export default function ShopContent() {
   
   const { todos } = useSelector((state) => state.todos);
   const { basket } = useSelector((state) => state.basket);
-  console.log(basket);
+
 
   if (!Array.isArray(todos)) {
     // Veri yüklenene kadar veya hata alana kadar Loading bileşenini göster

@@ -201,6 +201,28 @@
   ],
   "basket": [
     {
+      "id": "6",
+      "title": "Güvenlik Gözlüğü",
+      "description": "İş güvenliği için önemli olan göz koruması için kullanılır.",
+      "image": "/images/featuredImages/bS1hHdO7NvbR1yN5ZPlR.png",
+      "price": 22,
+      "size": "36mm",
+      "color": "purple",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "8",
+      "title": "Yüzme Gözlüğü",
+      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
+      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
+      "price": 35,
+      "size": "28mm",
+      "color": "red",
+      "isFeautered": "false",
+      "isRecommended": "true"
+    },
+    {
       "id": "3",
       "title": "Moda Gözlüğü",
       "description": "Tarzınızı tamamlayacak şık ve trend bir gözlük.",
@@ -245,59 +267,48 @@
       "isRecommended": "false"
     },
     {
-      "id": "14",
-      "title": "Yüzme Gözlüğü",
-      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
-      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": 37,
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
       "size": "28mm",
-      "color": "red",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "5",
+      "title": "Bilgisayar Gözlüğü",
+      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
+      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
+      "price": 40,
+      "size": "28mm",
+      "color": "orange",
+      "isFeautered": "false",
+      "isRecommended": "false"
+    },
+    {
+      "id": "4",
+      "title": "Okuma Gözlüğü",
+      "description": "Kitap okurken gözlerinizi yormadan keyifli bir okuma deneyimi sunar.",
+      "image": "/images/featuredImages/YVPdTsyxJybMCsdKpXhq.png",
+      "price": 25,
+      "size": "20mm",
+      "color": "green",
       "isFeautered": "false",
       "isRecommended": "true"
     },
     {
-      "id": "5",
-      "title": "Bilgisayar Gözlüğü",
-      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
-      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
-      "price": 40,
-      "size": "28mm",
-      "color": "orange",
-      "isFeautered": "false",
+      "id": "3",
+      "title": "Moda Gözlüğü",
+      "description": "Tarzınızı tamamlayacak şık ve trend bir gözlük.",
+      "image": "/images/featuredImages/LIu8tS4yHSU28Xi8BXCj.png",
+      "price": 29,
+      "size": "20mm",
+      "color": "blue",
+      "isFeautered": "true",
       "isRecommended": "false"
-    },
-    {
-      "id": "5",
-      "title": "Bilgisayar Gözlüğü",
-      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
-      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
-      "price": 40,
-      "size": "28mm",
-      "color": "orange",
-      "isFeautered": "false",
-      "isRecommended": "false"
-    },
-    {
-      "id": "5",
-      "title": "Bilgisayar Gözlüğü",
-      "description": "Bilgisayar kullanımı sırasında göz yorgunluğunu azaltır ve mavi ışığı filtreler.",
-      "image": "/images/featuredImages/YZ7LM3vZjWbIIJH2tgEb.png",
-      "price": 40,
-      "size": "28mm",
-      "color": "orange",
-      "isFeautered": "false",
-      "isRecommended": "false"
-    },
-    {
-      "id": "8",
-      "title": "Yüzme Gözlüğü",
-      "description": "Yüzme sırasında gözlerinizi suya karşı korur ve net görüş sağlar.",
-      "image": "/images/featuredImages/7l3FMZqY8JdfssalDgx2.png",
-      "price": 35,
-      "size": "28mm",
-      "color": "red",
-      "isFeautered": "false",
-      "isRecommended": "true"
     }
   ]
 }

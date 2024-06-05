@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BiShoppingBag } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 import ShoppingCardForm from "../shoppingcardform/ShoppingCardForm";
@@ -9,12 +9,19 @@ export default function Navibar() {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const [searchText, setSearchText] = useState("");
   const { basketItems } = useSelector((state) => state.basket);
+  const [basketItemCount, setBasketItemCount] = useState(0);
+
+  useEffect(() => {
+    const totalCount = basketItems.reduce(
+      (total, currentItem) => total + currentItem.quantity,
+      0
+    );
+    setBasketItemCount(totalCount);
+  }, [basketItems]);
 
   const handleSearchChange = (e) => {
     setSearchText(e.target.value);
   };
-
-  const basketItemCount = basketItems?.reduce((total, currentItem) => total + currentItem.quantity, 0);
 
   return (
     <div className="py-4">
