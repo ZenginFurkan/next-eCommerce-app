@@ -2,22 +2,19 @@ import { useState, useEffect } from "react";
 import { BiShoppingBag } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 import ShoppingCardForm from "../shoppingcardform/ShoppingCardForm";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchBasket } from "@/stores/basket-store/basketSlice";
 
 export default function Navibar() {
   const router = useRouter();
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const { basketItems } = useSelector((state) => state.basket);
-  const [basketItemCount, setBasketItemCount] = useState(0);
+  const { basket } = useSelector((state) => state.basket);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const totalCount = basketItems.reduce(
-      (total, currentItem) => total + currentItem.quantity,
-      0
-    );
-    setBasketItemCount(totalCount);
-  }, [basketItems]);
+    dispatch(fetchBasket());
+  }, [dispatch]);
 
   const handleSearchChange = (e) => {
     setSearchText(e.target.value);
@@ -64,7 +61,7 @@ export default function Navibar() {
               <BiShoppingBag className="h-8 w-8" />
             </span>
             <span className="absolute -top-2 -right-2 bg-red-500 text-black rounded-full w-6 h-6 flex items-center justify-center text-xs">
-              {basketItemCount}
+              {basket.length}
             </span>
           </button>
           <button

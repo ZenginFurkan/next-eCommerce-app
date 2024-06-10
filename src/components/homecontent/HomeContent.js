@@ -8,6 +8,7 @@ import "../../app/globals.css";
 import Loading from "../loading/Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
+
 export default function HomeContent() {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -17,16 +18,13 @@ export default function HomeContent() {
   }, [dispatch]);
 
   const { todos } = useSelector((state) => state.todos);
-  const firstSixTodos = todos?.slice(0, 6);
 
-  if (todos.length === 0) {
+
+  if (!Array.isArray(todos) || todos.length === 0) {
     return <Loading />;
   }
 
-  if (!Array.isArray(firstSixTodos)) {
-    // Veri yüklenene kadar veya hata alana kadar Loading bileşenini göster
-    return <Loading />;
-  }
+  const firstSixTodos = todos.slice(0, 6);
 
   return (
     <>

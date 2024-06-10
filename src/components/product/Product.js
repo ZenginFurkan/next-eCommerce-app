@@ -2,7 +2,7 @@ import { fetchTodosById } from "@/stores/glasses-store/todoSlice";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addBasket } from "@/stores/basket-store/basketSlice";
+import { addBasket, deleteFromBasket } from "@/stores/basket-store/basketSlice";
 export default function Product() {
   const router = useRouter();
   const { id } = router.query;
@@ -36,8 +36,10 @@ export default function Product() {
     };
     dispatch(addBasket(itemToAdd));
   };
-
- 
+ const isInBasket = basket.some((item) => item.id === todos.id);
+ const removeFromBasket = (id) => {
+    dispatch(deleteFromBasket(id));
+  };
 
   return (
     <>
@@ -101,9 +103,9 @@ export default function Product() {
               <p className="text-3xl font-bold pl-2 pb-3">{todos?.price} $</p>
               <button
                 className="bg-black text-white font-bold py-2 px-4 rounded"
-                onClick={()=>addToBasket(todos)}
+                onClick={()=>isInBasket ? removeFromBasket(todos.id) : addToBasket(todos)}
               >
-                Add to Basket
+                {isInBasket ? "Remove from Basket" : "Add to Basket"}
               </button>
             </div>
           </div>
